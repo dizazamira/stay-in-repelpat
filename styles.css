@@ -291,15 +291,9 @@ footer {
 
 .music-btn:hover {
   transform: scale(1.08);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
-
-
-.music-btn:hover {
-  transform: scale(1.1);
-  background: #6aa85a;
-}
 
 
 
