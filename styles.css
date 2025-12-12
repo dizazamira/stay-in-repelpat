@@ -232,7 +232,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.85);
   padding: 12px 0;
   backdrop-filter: blur(10px);
-  width: 100% !important;
 }
 
 .navbar ul {
@@ -277,28 +276,6 @@ footer {
 #toTopBtn:hover {
   background-color: #ffc107;
 }
-  /* Semua section biar full-width */
-  .gallery, .students, .header, .navbar {
-    width: 100% !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-  }
-/* === FIX HEADER TIDAK FULL === */
-.header {
-  width: 100% !important;
-  margin: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  border-radius: 0 !important;
-}
-
-
-
-
-
-
-
-
 
 
 
