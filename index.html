@@ -15,7 +15,7 @@
   <source src="https://res.cloudinary.com/dxbspmul9/video/upload/v1765556361/Mati_Satu_Tak_Tumbuh_Lagi_t8dalu.mp3" type="audio/mpeg">
 </audio>
 <div class="music-btn" onclick="toggleMusic()">
-   Play
+   🎵
 </div>
   <nav class="navbar">
     <ul>
@@ -368,27 +368,24 @@
   <footer>
     <p>&copy; 2025 REPELPAT. All rights reserved.</p>
   </footer>
-  <script>
-  const music = document.getElementById("bgMusic");
-  const btn = document.getElementById("musicToggle");
+<script>
+function toggleMusic(){
+  var audio = document.getElementById("bg-music");
+  var btn = document.querySelector(".music-btn");
 
-  let isPlaying = false;
-
-  btn.addEventListener("click", () => {
-    if (!isPlaying) {
-      music.play();
-      btn.textContent = "Mute";
-      isPlaying = true;
-    } else {
-      music.pause();
-      btn.textContent = "Play";
-      isPlaying = false;
-    }
-  });
+  if (audio.paused) {
+    audio.play();
+    btn.innerHTML = "🎶"; // ikon saat nyala
+  } else {
+    audio.pause();
+    btn.innerHTML = "🎵"; // ikon saat mati
+  }
+}
 </script>
 
 </body>
 </html>
+
 
 
 
