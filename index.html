@@ -297,7 +297,7 @@
         <p>Rendi</p>
       </div>
       <div class="student">
-        <a href="https://www.instagram.com/fryzss_" target="_blank">
+        <a href="https://www.instagram.com/rizkysubagja1015" target="_blank">
           <img src="https://res.cloudinary.com/dxbspmul9/image/upload/v1765503833/rizky_alrqcn.jpg" alt="Siswa 3">
         </a>
         <p>Rizky</p>
@@ -386,9 +386,23 @@
       });
     };
   </script>
-  
+  <script>
+function toggleMusic(){
+  var audio = document.getElementById("bg-music");
+
+  if (audio.paused) {
+    audio.play();
+    document.querySelector(".music-btn").innerHTML = "🔊";
+  } else {
+    audio.pause();
+    document.querySelector(".music-btn").innerHTML = "🔇";
+  }
+}
+</script>
+
 </body>
 </html>
+
 
 
 
