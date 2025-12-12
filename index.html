@@ -15,7 +15,7 @@
   <source src="https://res.cloudinary.com/dxbspmul9/video/upload/v1765556361/Mati_Satu_Tak_Tumbuh_Lagi_t8dalu.mp3" type="audio/mpeg">
 </audio>
 <div class="music-btn" onclick="toggleMusic()">
-  🔊
+   🎵
 </div>
   <nav class="navbar">
     <ul>
@@ -386,22 +386,25 @@
       });
     };
   </script>
-  <script>
+ <script>
 function toggleMusic(){
   var audio = document.getElementById("bg-music");
+  var btn = document.querySelector(".music-btn");
 
   if (audio.paused) {
     audio.play();
-    document.querySelector(".music-btn").innerHTML = "🔊";
+    btn.innerHTML = "🎶";
   } else {
     audio.pause();
-    document.querySelector(".music-btn").innerHTML = "🔇";
+    btn.innerHTML = "🎵"; 
   }
 }
 </script>
 
+
 </body>
 </html>
+
 
 
 
