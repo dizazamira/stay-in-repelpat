@@ -276,30 +276,34 @@ footer {
 #toTopBtn:hover {
   background-color: #ffc107;
 }
-
-.circle {
-  width: 150px;      /* bebas atur */
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;  /* supaya isi gambar rapi */
-}
-
-/* === FIX BACKGROUND SISA DI HP === */
-@media (max-width: 600px) {
-
-  /* Background biar ga glitch & tidak muncul space aneh */
-  body {
-    background-attachment: scroll !important;
-    background-position: top !important;
-  }
-
   /* Semua section biar full-width */
   .gallery, .students, .header {
     width: 100% !important;
     margin: 0 !important;
     border-radius: 0 !important;
   }
+/* === FIX HEADER TIDAK FULL === */
+.header {
+  width: 100% !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border-radius: 0 !important;
 }
+
+/* HP fix */
+@media (max-width: 600px) {
+  body {
+    padding: 0 !important;
+  }
+  .header {
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+}
+
+
 
 
 
