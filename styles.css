@@ -1,30 +1,29 @@
-/* Import Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Body dengan gambar latar belakang */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #075315;
   background-image: url('https://res.cloudinary.com/dxbspmul9/image/upload/v1765503700/daunbg_emvniy.jpg'); /* Ganti dengan path gambar kamu */
-  background-size: cover; /* Agar gambar menutupi seluruh layar */
-  background-position: center; /* Menempatkan gambar di tengah */
-  background-attachment: fixed; /* Gambar tetap saat di-scroll */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
   color: #ffffff;
 }
 
 /* Header */
 .header {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6); /* Transparan hitam untuk header agar teks terlihat jelas */
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 60px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
-  font-size: clamp(2rem, 6vw, 4rem); /* min 2rem, ideal 6% dari lebar layar, max 4rem */
+  font-size: clamp(2rem, 6vw, 4rem); 
   margin: 0;
   transition: color 0.3s ease;
 }
@@ -40,7 +39,7 @@ body {
 .gallery, .students {
   padding: 30px;
   margin: 20px;
-  background-color: rgba(0, 0, 0, 0.8); /* Background putih transparan */
+  background-color: rgba(0, 0, 0, 0.8); 
   border-radius: 10px;
 }
 
@@ -71,14 +70,14 @@ body {
 /* Daftar Siswa */
 .student-list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* default: 5 kolom di desktop */
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   justify-items: center;
 }
 
 .student {
   width: 100%;
-  max-width: 200px; /* biar pas di desktop */
+  max-width: 200px; 
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -207,24 +206,21 @@ footer {
 }
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* default: 3 kolom */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 40px;
 }
 
-/* Untuk layar 768px ke bawah (tablet & HP) */
 @media (max-width: 768px) {
   .image-grid {
-    grid-template-columns: repeat(2, 1fr); /* jadi 2 kolom */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
-/* Untuk layar 480px ke bawah (HP kecil) */
 @media (max-width: 480px) {
   .image-grid {
-    grid-template-columns: 1fr; /* jadi 1 kolom */
+    grid-template-columns: 1fr; 
   }
 }
-/* === NAVBAR === */
 .navbar {
   position: sticky;
   top: 0;
@@ -276,22 +272,14 @@ footer {
 #toTopBtn:hover {
   background-color: #ffc107;
 }
-/* === RESPONSIVE FOOTER === */
+
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 60px 0;
   background-color: #000000;
   color: white;
   font-size: 1rem;
   width: 100%;
-}
-
-/* Responsive Footer */
-@media (max-width: 600px) {
-  footer {
-    font-size: 0.85rem;   /* mengecil sedikit */
-    padding: 10px;        /* lebih compact */
-  }
 }
 
 
