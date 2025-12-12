@@ -275,24 +275,23 @@ footer {
 
 .music-btn {
   position: fixed;
-  bottom: 80px;   
   right: 20px;
-  background: #ffffffcc;      
-  color: #333;                   
-  font-size: 18px;            
-  padding: 10px 12px;          
-  border-radius: 50%;         
+  bottom: 100px;
+  padding: 10px 22px;      
+  background: #ffd700;
+  color: white;
+  border: none;
+  border-radius: 999px;   
   cursor: pointer;
-  backdrop-filter: blur(6px); 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  border: 1px solid rgba(0,0,0,0.1);
-  transition: 0.25s;
-  z-index: 999;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+  transition: 0.3s;
 }
 
 .music-btn:hover {
   transform: scale(1.08);
-  background: #f3f3f3cc;
+  background: #FFFFFF;
 }
 
 
@@ -301,6 +300,7 @@ footer {
   transform: scale(1.1);
   background: #6aa85a;
 }
+
 
 
 
