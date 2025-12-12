@@ -191,14 +191,7 @@ body {
     height: 150px;
   }
 }
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-  .teacher-card {
-    width: 90%;
-  }
-}
+
 
 
 /* Footer */
@@ -291,18 +284,7 @@ footer {
   object-fit: cover;  /* supaya isi gambar rapi */
 }
 
-/* === MOBILE LAYOUT FIX (HP) === */
-@media (max-width: 600px) {
 
-  /* Hilangkan padding body yang bikin space putih */
-  body {
-    padding: 0 !important;
-    background-attachment: scroll; /* biar background ga glitch di HP */
-  }
 
-  /* Kurangi margin section yang terlalu besar di HP */
-  .gallery, .students {
-    margin: 10px !important;
-    padding: 20px !important;
-  }
-}
+
+
