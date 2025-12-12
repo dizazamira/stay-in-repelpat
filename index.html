@@ -368,6 +368,24 @@
   <footer>
     <p>&copy; 2025 REPELPAT. All rights reserved.</p>
   </footer>
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+  
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    };
+  
+    toTopBtn.onclick = function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    };
+  </script>
 <script>
 function toggleMusic(){
   var audio = document.getElementById("bg-music");
@@ -385,6 +403,7 @@ function toggleMusic(){
 
 </body>
 </html>
+
 
 
 
