@@ -202,7 +202,6 @@ footer {
   font-size: 1rem;
   position: relative;
   bottom: 0;
-  width: 100%;
 }
 .image-grid {
   display: grid;
@@ -272,6 +271,7 @@ footer {
 #toTopBtn:hover {
   background-color: #ffc107;
 }
+
 
 
 
