@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #075315;
-  background-image: url('image/daunbg.jpeg'); /* Ganti dengan path gambar kamu */
+  background-image: url('https://res.cloudinary.com/dxbspmul9/image/upload/v1765503700/daunbg_emvniy.jpg'); /* Ganti dengan path gambar kamu */
   background-size: cover; /* Agar gambar menutupi seluruh layar */
   background-position: center; /* Menempatkan gambar di tengah */
   background-attachment: fixed; /* Gambar tetap saat di-scroll */
@@ -283,5 +283,6 @@ footer {
   border-radius: 50%;
   object-fit: cover;  /* supaya isi gambar rapi */
 }
+
 
 
