@@ -275,22 +275,33 @@ footer {
 
 .music-btn {
   position: fixed;
-  bottom: 80px;   /* dari 20px -> jadi 80px biar naik */
+  bottom: 80px;   
   right: 20px;
-  background: #4f7942;
-  color: white;
-  font-size: 25px;
-  padding: 15px 18px;
-  border-radius: 50%;
+  background: #ffffffcc;      
+  color: #333;                   
+  font-size: 18px;            
+  padding: 10px 12px;          
+  border-radius: 50%;         
   cursor: pointer;
+  backdrop-filter: blur(6px); 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 1px solid rgba(0,0,0,0.1);
+  transition: 0.25s;
   z-index: 999;
 }
+
+.music-btn:hover {
+  transform: scale(1.08);
+  background: #f3f3f3cc;
+}
+
 
 
 .music-btn:hover {
   transform: scale(1.1);
   background: #6aa85a;
 }
+
 
 
 
