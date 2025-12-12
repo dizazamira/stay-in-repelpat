@@ -1,0 +1,287 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Body dengan gambar latar belakang */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #075315;
+  background-image: url('image/daunbg.jpeg'); /* Ganti dengan path gambar kamu */
+  background-size: cover; /* Agar gambar menutupi seluruh layar */
+  background-position: center; /* Menempatkan gambar di tengah */
+  background-attachment: fixed; /* Gambar tetap saat di-scroll */
+  color: #ffffff;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Transparan hitam untuk header agar teks terlihat jelas */
+  color: white;
+  padding: 60px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: clamp(2rem, 6vw, 4rem); /* min 2rem, ideal 6% dari lebar layar, max 4rem */
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.header p {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin: 20px;
+  
+}
+
+
+/* Gallery dan Students Section */
+.gallery, .students {
+  padding: 30px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Background putih transparan */
+  border-radius: 10px;
+}
+
+.gallery h2, .students h2 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  margin-bottom: 20px;
+}
+
+
+/* Grid Galeri */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Daftar Siswa */
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* default: 5 kolom di desktop */
+  gap: 20px;
+  justify-items: center;
+}
+
+.student {
+  width: 100%;
+  max-width: 200px; /* biar pas di desktop */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.student img {
+  width: 100%;
+  height: 260px; /* ini bikin bentuk potret */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.student:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar Utama */
+.main-navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.sub-navbar {
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 60px;
+  z-index: 999;
+  border-radius: 0 0 20px 20px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0; /* Reset padding di container */
+  min-height: 50px; /* Biar punya tinggi yang stabil */
+}
+
+.sub-navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-navbar li {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  display: flex;
+  align-items: center;
+}
+
+.sub-navbar a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  padding: 12px 16px; /* Ciptakan ruang dalam tombol */
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+
+.sub-navbar a:hover {
+  color: #fffb00;
+}
+
+
+/* Heading Galeri */
+.gallery-heading {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: bold;
+  margin-top: 60px;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Optional: Styling galeri section */
+.gallery-section {
+  padding: 20px;
+}
+
+/* Responsive: HP ukuran kecil 4 kolom */
+@media (max-width: 768px) {
+  .student-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .student-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .student img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .student img {
+    height: 150px;
+  }
+}
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #000000;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* default: 3 kolom */
+  gap: 40px;
+}
+
+/* Untuk layar 768px ke bawah (tablet & HP) */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr); /* jadi 2 kolom */
+  }
+}
+
+/* Untuk layar 480px ke bawah (HP kecil) */
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* jadi 1 kolom */
+  }
+}
+/* === NAVBAR === */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 12px 0;
+  backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #ffd700;
+}
+
+/* === TOMBOL KEMBALI KE ATAS === */
+#toTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  background-color: #ffd700;
+  color: black;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+#toTopBtn:hover {
+  background-color: #ffc107;
+}
+
+.circle {
+  width: 150px;      /* bebas atur */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;  /* supaya isi gambar rapi */
+}
+
+
