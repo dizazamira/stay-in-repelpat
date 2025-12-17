@@ -84,7 +84,7 @@ body {
 
 .student img {
   width: 100%;
-  height: 260px; /* ini bikin bentuk potret */
+  height: 260px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
@@ -96,6 +96,36 @@ body {
 }
   
 /* Navbar Utama */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 12px 0;
+  backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #ffd700;
+}
+
 .main-navbar {
   background-color: #333;
   color: white;
@@ -221,37 +251,8 @@ footer {
     grid-template-columns: 1fr; 
   }
 }
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 12px 0;
-  backdrop-filter: blur(10px);
-}
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-.navbar li a:hover {
-  color: #ffd700;
-}
-
-/* tombol kembali ke atas */
+/* Button */
 #toTopBtn {
   display: none;
   position: fixed;
@@ -287,12 +288,14 @@ footer {
   font-size: 14px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.25);
   transition: 0.3s;
+  z-index: 9999;     
 }
 
 .music-btn:hover {
   transform: scale(1.08);
   background: #ffffff;
 }
+
 
 
 
