@@ -125,7 +125,7 @@ body {
 }
 
 
-/* Gallery dan Students Section */
+/* Gallery, Memories dan Students Section */
 
 /* Heading Galeri */
 .gallery-heading {
@@ -173,40 +173,50 @@ body {
 
 /* Memories */
 .memories {
-  padding: 80px 20px;
+  padding: 40px 30px;
+  margin: 20px;
   text-align: center;
-  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
 }
 
 .memories h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
+  font-size: clamp(2rem, 6vw, 4rem);
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .memories-desc {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto 30px;
-  font-size: 16px;
-  color: #555;
-  line-height: 1.6;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  color: #dddddd;
+  line-height: 1.7;
+  font-weight: 300;
 }
 
 .drive-btn {
   display: inline-block;
-  padding: 14px 28px;
-  background: #1a73e8;
-  color: white;
+  padding: 12px 26px;
+
+  background: #ffd700;
+  color: #000000;
   text-decoration: none;
-  font-size: 16px;
-  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 999px;
+
+  box-shadow: 0 3px 10px rgba(255, 215, 0, 0.4);
   transition: all 0.3s ease;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .drive-btn:hover {
-  background: #1558b0;
-  transform: translateY(-3px);
+  background: #ffffff;
+  color: #000000;
+  transform: scale(1.08);
 }
 
 
@@ -334,6 +344,7 @@ footer {
     grid-template-columns: 1fr; 
   }
 }
+
 
 
 
