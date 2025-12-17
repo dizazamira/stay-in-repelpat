@@ -1,17 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #075315;
-  background-image: url('https://res.cloudinary.com/dxbspmul9/image/upload/v1765518738/daun_gwj8zp.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; 
-  color: #ffffff;
-}
 
 /* Header */
 .header {
@@ -34,67 +23,20 @@ body {
   
 }
 
-
-/* Gallery dan Students Section */
-.gallery, .students {
-  padding: 30px;
-  margin: 20px;
-  background-color: rgba(0, 0, 0, 0.8); 
-  border-radius: 10px;
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #075315;
+  background-image: url('https://res.cloudinary.com/dxbspmul9/image/upload/v1765518738/daun_gwj8zp.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  color: #ffffff;
 }
 
-.gallery h2, .students h2 {
-  font-size: clamp(2rem, 6vw, 4rem);
-  margin-bottom: 20px;
-}
 
-
-/* Grid Galeri */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-}
-
-.image-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.image-grid img:hover {
-  transform: scale(1.1);
-}
-
-/* Daftar Siswa */
-.student-list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  justify-items: center;
-}
-
-.student {
-  width: 100%;
-  max-width: 200px; 
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.student img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-}
-
-.student:hover {
-  transform: scale(1.08);
-  transition: 0.3s;
-}
-  
 /* Navbar Utama */
 .navbar {
   position: sticky;
@@ -183,6 +125,8 @@ body {
 }
 
 
+/* Gallery dan Students Section */
+
 /* Heading Galeri */
 .gallery-heading {
   font-size: clamp(1rem, 3vw, 1.5rem);
@@ -192,11 +136,107 @@ body {
   border-bottom: 2px solid #ccc;
 }
 
-
 .gallery-section {
   padding: 20px;
 }
 
+.gallery, .students {
+  padding: 30px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.8); 
+  border-radius: 10px;
+}
+
+.gallery h2, .students h2 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  margin-bottom: 20px;
+}
+
+
+/* Grid Galeri */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Memories */
+.memories {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+.memories h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.memories-desc {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.drive-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #1a73e8;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.drive-btn:hover {
+  background: #1558b0;
+  transform: translateY(-3px);
+}
+
+
+/* Daftar Siswa */
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.student {
+  width: 100%;
+  max-width: 200px; 
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.student img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.student:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+}
 
 @media (max-width: 768px) {
   .student-list {
@@ -221,37 +261,7 @@ body {
     height: 150px;
   }
 }
-
-
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #000000;
-  color: white;
-  font-size: 1rem;
-  position: relative;
-  bottom: 0;
-}
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 40px;
-}
-
-@media (max-width: 768px) {
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-}
-
-@media (max-width: 480px) {
-  .image-grid {
-    grid-template-columns: 1fr; 
-  }
-}
-
+  
 /* Button */
 #toTopBtn {
   display: none;
@@ -295,6 +305,36 @@ footer {
   transform: scale(1.08);
   background: #ffffff;
 }
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #000000;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr; 
+  }
+}
+
 
 
 
